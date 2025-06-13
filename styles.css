@@ -1,0 +1,128 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background: #f7f7fa;
+    color: #222;
+}
+
+#main {
+    background-color: #80caff;
+    border-radius: 10px;
+    padding: 0px 30px;
+}
+
+#score {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+#scoreButtonContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#totalScore {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 16px;
+    color: #444;
+    vertical-align: middle;
+}
+
+#startButton {
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    background: #4f8cff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#startButton:hover {
+    background: #2563c9;
+}
+
+#confirmButton {
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    background: #34c759;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background 0.2s;
+}
+
+#confirmButton:hover {
+    background: #249944;
+}
+
+#continueButton {
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    background: #ffb300;
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background 0.2s;
+}
+
+#continueButton:hover {
+    background: #ff9800;
+}
+
+#gameCanvas {
+    border: 3px solid #333;
+    display: block;
+    margin: 24px auto;
+    background: #fff;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    color: #2563c9;
+    text-shadow: 1px 2px 8px #b6c6f5;
+}
+
+@media (max-width: 900px) {
+    #gameCanvas {
+        width: 98vw !important;
+        height: 60vw !important;
+        max-width: 98vw;
+        max-height: 70vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    #score, #totalScore {
+        font-size: 1rem;
+    }
+    #scoreButtonContainer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
